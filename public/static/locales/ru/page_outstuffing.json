@@ -1,0 +1,35 @@
+{
+    "head": {
+        "title": "Аутстафф"
+    },
+    "intro": {
+        "title": "Lorem ipsum",
+        "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"work-for": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+	"features": [
+		"Lorem ipsum\ndolor sit amet",
+		"Consectetur\nи adipiscing elit",
+		"Sed do eiusmod\ntempor incididunt",
+		"Ut labore et\ndolore magna aliqua",
+		"Ut enim ad minim veniam",
+		"Quis nostrud exercitation\nullamco laboris"
+	],
+	"process": {
+		"title": "Lorem ipsum",
+		"list": [
+		  "Lorem ipsum",
+		  "Dolor sit amet",
+		  "Consectetur adipiscing elit",
+		  "Sed do eiusmod tempor"
+		],
+		"bottom": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+	},
+	"partners": {
+		"title": "Lorem ipsum",
+		"text": "Lorem ipsum dolor sit amet, <0>consectetur adipiscing elit,</0> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	  },
+	  "contact": {
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n sed do eiusmod tempor <0>incididunt ut labore et dolore magna aliqua.</0>"
+	  }
+}

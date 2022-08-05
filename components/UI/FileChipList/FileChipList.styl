@@ -1,0 +1,37 @@
+@import '~styles/_import'
+
+.wrap
+	display flex
+
+.chip
+	border-radius 5px
+	background-color #F2F2F2
+	border 1px solid transparent
+	height 27px
+	padding 0 10px
+	display inline-flex
+	align-items center
+	justify-content center
+	&:hover
+		background-color #DBDBDB
+		.name
+			color #000
+		.close
+			:global(.fill)
+				fill #000
+	& + &
+		margin-left 10px
+
+.name
+	display inline-block
+	font-size 13px
+	font-weight 500
+	line-height 24px
+	color #909090
+	margin-right 6px
+
+.close
+	cursor pointer
+
+.err
+	border-color #e50000

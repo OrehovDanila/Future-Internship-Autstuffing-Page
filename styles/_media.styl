@@ -1,0 +1,46 @@
+/** Ширина сайта */
+$pageWidth = 1600px
+
+/** Ширина бокового меню */
+$sideWidth = 300px
+
+/**
+ * Расстояние МЕЖДУ колонками
+ * т.е. у колонки справа и слева будет padding: colGap/2
+ */
+$colGap = 80px
+// $colGapMobile = 20px
+
+/**
+ * Media queries
+ * обычные переменные со значением строки
+ * использование: @media mobile
+ */
+lWidth = 1600px
+mdSize = 1440px
+descSize = 1190px
+tabletSize = 1090px
+smalltabletSize = 960px
+mobileSize = 630px
+smallSize = 420px
+smallestSize = 320px
+
+page = s("only screen and (max-width: %s)", (pageWidth + 2 * $colGap))
+more-page = s("only screen and (min-width: %s)", (pageWidth + 2 * $colGap + 1))
+l = s("only screen and (max-width: %s)", (lWidth))
+more-l = s("only screen and (min-width: %s)", (lWidth + 1))
+md = s("only screen and (max-width: %s)", mdSize)
+more-md = s("only screen and (min-width: %s)", mdSize + 1)
+desc = s("only screen and (max-width: %s)", descSize)
+more-desc = s("only screen and (min-width: %s)", descSize + 1)
+tablet = s("only screen and (max-width: %s)", tabletSize)
+more-tablet = s("only screen and (min-width: %s)", tabletSize + 1)
+small-tablet = s("only screen and (max-width: %s)", smalltabletSize)
+small-more-tablet = s("only screen and (min-width: %s)", smalltabletSize + 1)
+mobile = s("only screen and (max-width: %s)", mobileSize)
+mobileHorizontal = s("only screen and (max-width: %s) and (max-height: 600px)", tabletSize)
+more-mobile = s("only screen and (min-width: %s)", mobileSize + 1)
+small = s("only screen and (max-width: %s)", smallSize)
+more-small = s("only screen and (min-width: %s)", smallSize + 1)
+smallest = s("only screen and (max-width: %s)", smallestSize)
+more-smallest = s("only screen and (min-width: %s)", smallestSize + 1)

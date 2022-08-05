@@ -1,0 +1,89 @@
+@import '~styles/_import'
+
+.wrap
+	margin-bottom 50px
+	position relative
+	z-index 1
+	@media mobile
+		margin-bottom 30px
+
+.gradientWrap
+	width 100%
+	height 100%
+	position absolute
+	right 0
+	top 0
+	z-index -1
+
+.services
+	margin-bottom 20px
+
+.title
+	&.noLowercase
+		text-transform: none
+	@media tablet
+		margin-top 0px
+	@media mobile
+		margin-bottom 30px
+
+.inner
+	background-color #f0f0f0
+	margin-bottom 110px
+	@media mobile
+		margin-bottom 35px
+	.title
+		margin-top 0
+		@media tablet
+			margin-bottom 30px
+	&:before
+		content ''
+		position absolute
+		top 0
+		left 0
+		background-color #f0f0f0
+		height 200px
+		width 100%
+		z-index -1
+
+.bottom
+	padding-bottom 60px
+	font-size 24px
+	font-weight 600
+	line-height 38px
+	color #686868
+	max-width 1080px
+	p:first-of-type
+		margin-top 0
+	p:last-of-type
+		margin-bottom 0
+	@media tablet
+		font-size 20px
+		line-height 30px
+		padding-bottom 60px
+	@media mobile
+		padding-bottom 20px
+
+.btnWrap
+	margin-top 40px
+	@media mobile
+		margin-top 25px
+
+.major
+	background-color #F0F0F0
+	background-size contain
+	background-repeat no-repeat
+	background-position top right
+	margin-bottom 60px
+	@media screen and (max-width: 1400px)
+		background-size cover
+	@media mobile
+		margin-bottom 35px
+
+
+.btn
+	& + &
+		margin-left 30px
+		@media mobile
+			display flex
+			margin-left 0
+			margin-top 20px

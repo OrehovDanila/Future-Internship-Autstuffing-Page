@@ -1,0 +1,129 @@
+@import '~styles/_import'
+
+.outer
+	background-image url('/static/img/bubbles/research.svg')
+	background-repeat no-repeat
+	background-size contain
+	background-position center
+	height 200px
+
+	display flex
+	align-items center
+	justify-content center
+
+	overflow-x visible
+	-webkit-overflow-scrolling touch
+	-ms-overflow-style none
+
+	@media tablet
+		height 150px
+
+	@media mobile
+		background-image url('/static/img/bubbles/research_mobile.svg')
+
+.create
+	background-image url('/static/img/bubbles/create.svg')
+	@media mobile
+		background-image url('/static/img/bubbles/create_mobile.svg')
+
+.design
+	background-image url('/static/img/bubbles/design.svg')
+	@media mobile
+		background-image url('/static/img/bubbles/design_mobile.svg')
+
+.research
+	background-image url('/static/img/bubbles/research.svg')
+	@media mobile
+		background-image url('/static/img/bubbles/research_mobile.svg')
+
+.support
+	background-image url('/static/img/bubbles/support.svg')
+	@media mobile
+		background-image url('/static/img/bubbles/support_mobile.svg')
+
+.wrap
+	width 100%
+
+.wrap__scrollable
+	width 100vw
+
+.ul.scrollable
+	scrollbar-width none
+	padding-left 60px
+	padding-right 60px
+	overflow-x scroll
+	justify-content flex-start
+
+	scrollbar-width none
+
+	&::-webkit-scrollbar
+		display none
+		width 0 !important
+		height 0
+		background #fff
+
+	@media desc
+		padding-left 50px
+		padding-right 50px
+
+	@media mobile
+		padding-left 20px
+		padding-right 20px
+
+.ul
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	counter-reset list
+	font-size 24px
+	font-weight bold
+	line-height 32px
+	color #000
+	user-select none
+
+	@media tablet
+		flex-wrap nowrap
+		background-color transparent
+		cursor grab
+	@media mobile
+		line-height 30px
+		font-size 19px
+
+.li
+	margin-right 20px
+	position relative
+	counter-increment list
+	white-space nowrap
+	@media mobile
+		padding-bottom 30px
+	@media screen and (max-width: 1700px)
+		padding-top 20px
+	&:before
+		content '0' counter(list)
+		position absolute
+		top -20px
+		left 0
+		display block
+		font-size 13px
+		font-weight 500
+		line-height 24px
+		color #909090
+		z-index 100
+		@media screen and (max-width: 1700px)
+			top 0
+	&:not(:last-of-type)
+		&:after
+			margin-left 20px
+			content url('/static/icons/arrow_next.svg')
+
+.ul.scrollable
+	.li:last-of-type
+		&:after
+			content ''
+			display inline-block
+			width 60px
+			@media desc
+				width 50px
+			@media mobile
+				width 20px

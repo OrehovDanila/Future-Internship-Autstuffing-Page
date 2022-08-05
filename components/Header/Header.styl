@@ -1,0 +1,87 @@
+@import '~styles/_import'
+
+withFilter =
+	background-color rgba(255, 255, 255, 0.7)
+	backdrop-filter blur(10px)
+	border-bottom 1px solid #F0F0F0
+
+:global(.titleWithBreadCrumbs)
+	position relative
+	padding-top (80 + 125)px
+	@media (max-width: 1280px)
+		padding-top (80 + 65)px
+	@media tablet
+		padding-top 100px
+
+.wrap
+	position absolute
+	top 0
+	left 0
+	right 0
+	width 100vw
+	background-color transparent
+	padding 60px 0
+	z-index 100
+
+	&.testHeader
+		max-width 1440px
+		width 100%
+		margin 0 auto
+
+		@media tablet 
+			max-width 970px
+
+	&.noFixedHeader
+		border none
+
+	@media (max-width: 1280px)
+		padding 30px 0
+	@media tablet
+		position fixed
+		z-index 10
+		padding 20px 0
+		{withFilter}
+
+		&.noFixedHeader 
+			position absolute
+			background-color transparent
+
+	@media mobile
+		padding 18px 0
+
+.content
+	display flex
+	justify-content space-between
+	align-items center
+	position relative
+
+.right
+	position relative
+	display flex
+	align-items center
+	justify-content flex-end
+	reset-link()
+	@media mobile
+		position static
+
+.fixed
+	position fixed
+	padding 20px 0
+	width 100vw
+	top 0
+	left 0
+	right 0
+	// left 50%
+	// transform translateX(-50%)
+	{withFilter}
+
+.inner
+	background-color rgba(240, 240, 240, 0.7)
+	border-bottom-color transparent
+
+.grayScrolled
+	{withFilter}
+
+.transparent
+	background-color transparent
+

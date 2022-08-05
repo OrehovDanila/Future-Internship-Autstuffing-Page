@@ -1,0 +1,15 @@
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g id="1.-Home_hover" transform="translate(-1661.000000, -70.000000)">
+			<g id="user" transform="translate(1661.000000, 70.000000)">
+				<circle id="Oval" stroke="#000000" stroke-width="3" cx="17.5" cy="17.5" r="16"></circle>
+				<g id="Group-2" transform="translate(7.000000, 7.000000)">
+					<path id="Path" d="M2.83374716,24 L2.83374716,23.5836236 C2.83374716,20.3809547 5.49436763,17.7752539 8.76513944,17.7752539 L12.2348606,17.7752539 C15.5050312,17.7752539 18.1662528,20.3809547 18.1662528,23.5836236 L18.1662528,24 L21,24 L21,23.5836236 C21,20.6865035 19.5145971,18.0025021 17.0265022,16.4047 C15.5958025,15.4856989 13.9390763,15 12.2354617,15 L8.76574057,15 C6.05883275,15 3.54308565,16.2068881 1.86351637,18.3109945 C0.645017119,19.8375607 0.00120226863,21.6608448 0.00120226863,23.5836236 L0.00120226863,24 L2.83374716,24 Z" fill="#000000" fill-rule="nonzero"></path>
+					<circle id="Oval" stroke="#000000" stroke-width="3" cx="10.5" cy="6.5" r="5"></circle>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

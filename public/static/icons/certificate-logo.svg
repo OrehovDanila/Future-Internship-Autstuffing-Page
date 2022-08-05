@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="255px" viewBox="0 0 200 255" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="200" height="255"></rect>
+        <rect id="path-3" x="0" y="0" width="200" height="400"></rect>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g mask="url(#mask-2)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Фон"></g>
+                <g id="Лого" mask="url(#mask-4)">
+                    <g transform="translate(55.259888, 200.978637) rotate(45.000000) translate(-55.259888, -200.978637) translate(-86.146362, 59.572387)">
+                        <polygon id="Линия_3" fill="#5FCF86" points="0 0 204.6875 0 282.8125 78.125 282.8125 282.8125 204.74999 282.8125 204.6875 78.125 0 78.125"></polygon>
+                        <polygon id="Линия_2" fill="#6AE695" points="282.8125 78.125 282.8125 282.8125 204.74999 282.8125 204.6875 78.125"></polygon>
+                        <rect id="Линия_1" fill="#71DE98" x="0" y="0" width="204.6875" height="78.125"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

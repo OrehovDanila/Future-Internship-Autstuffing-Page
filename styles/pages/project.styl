@@ -1,0 +1,273 @@
+@import '~styles/_import'
+
+.description
+	@media more-mobile
+		color $gray
+		font-size: 24px;
+		font-weight: 600;
+		letter-spacing: 0;
+		line-height: 38px;
+
+.bold
+	color: $fontColor
+
+.chips
+	margin-top: 20px
+
+	list-style none
+	padding 0
+
+	display flex
+	flex-flow row nowrap
+
+	overflow auto
+
+	padding-bottom 20px
+	
+	margin-bottom -20px
+	margin-left -10px
+	margin-right -10px
+
+	scrollbar-width none
+	-ms-overflow-style -ms-autohiding-scrollbar
+
+	&::-webkit-scrollbar 
+		display none
+		-webkit-appearance none
+		width 0
+		height 0
+
+	flex-wrap wrap
+
+	@media mobile
+		margin-top: 28px
+
+	li
+		white-space nowrap
+		pointer-events none
+
+		&:first-of-type
+				margin-left 10px
+
+		@media mobile
+			height 40px
+			
+			&:last-of-type
+				&:after
+					content ''
+					display inline-block
+					width 20px
+
+		& + li
+			margin-left 10px
+
+.linksContainer
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	@media mobile
+		margin-top: 8px
+
+.download
+	display: flex
+	margin-right: 40px
+	@media mobile
+		margin-right: 20px
+
+.donloadLink
+	margin-right: 20px;
+	&:last-child
+		margin-right: 0;
+
+.link
+	color $blue
+	display inline-block
+	cursor pointer
+
+.headLink
+	font-size: 27px;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 46px;
+	@media mobile
+		font-size: 19px;
+		line-height: 30px;
+
+.sectionDescription
+	margin-top 37px
+	white-space: pre-line
+	&:first-child
+		margin-top: 0
+	@media mobile
+		margin-top 30px
+
+.objectiveImg
+	margin-top: 60px
+	width: 100%
+	@media mobile
+		margin-top: 30px
+
+.engineeringImg
+	margin-top: 60px
+	@media mobile
+		margin-top: 30px
+
+.designSlider
+	margin-top: 60px
+	@media mobile
+		margin-top: 30px
+
+.tableRow
+	margin-top 60px
+
+.header
+	display flex
+	justify-content space-between
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 0;
+	line-height: 32px;
+	padding-bottom 16px
+	border-bottom 3px solid #000
+
+.body
+	display flex
+	justify-content space-between
+	padding-top: 29px
+	padding-bottom: 36px
+	border-bottom 1px solid $dimmedGray
+	.tableTitle
+		font-size: 24px;
+		font-weight: 600;
+		letter-spacing: 0;
+		line-height: 38px;
+		color $gray
+	.tableValue
+		font-size: 48px;
+		font-weight: 600;
+		letter-spacing: 0;
+		line-height: 32px;
+	& .first
+		.tableValue
+			font-size: 48px;
+			font-weight: 600;
+			letter-spacing: 0;
+			line-height: 32px;
+
+.sectionRow
+	margin-bottom 110px
+	@media mobile
+		margin-bottom 60px
+
+.video
+	margin-top 110px
+	@media mobile
+		margin-top 30px
+
+.videoCol
+	@media mobile
+		padding 0
+
+.engineeringRow
+	margin-bottom 110px
+	img
+		width: 100%
+	@media mobile
+		margin-bottom 60px
+
+.sliderRow
+	margin-bottom 100px
+	@media mobile
+		margin-bottom 51px
+
+.donePoints
+	display flex
+	flex-wrap wrap
+	li
+		width 480px
+		margin-left calc(100% / 3 - 480px)
+		&:nth-child(n + 4)
+			margin-top 60px
+
+
+.itemNumber
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 32px;
+	size 64px
+	border-radius 50%
+	background-color $dimmedGray
+	display flex
+	justify-content center
+	align-items center
+
+.itemText
+	margin-top 20px
+
+.section
+	margin-top 40px
+	@media mobile
+		margin-top: 30px
+
+.mindmapSection
+	margin-top 60px
+	padding-left 0
+	padding-right 0
+	@media mobile
+		margin-top: 0
+
+.engineeringSection
+	margin-top 60px
+
+.suggestion
+	font-size: 19px;
+	letter-spacing: 0;
+	line-height: 30px;
+
+.arrowsList
+	margin-top: 60px
+	@media mobile
+		margin-top: 35px
+
+.participants
+	margin-top: 48px
+	margin-bottom: 110px
+	@media mobile
+		margin-top 30px
+		margin-bottom: 60px
+
+.participantsRow
+	margin-top 10px
+	white-space nowrap
+	@media mobile
+		white-space normal
+		margin-top 0
+	&:first-child
+		margin-top 0
+	&:nth-child(2n)
+		transform translateX(-240px)
+		@media mobile
+			transform unset
+
+.participantsText
+	color $gray
+	font-size: 84px;
+	font-weight: bold;
+	letter-spacing: 0;
+	line-height: 90px;
+	display inline-block
+	text-transform lowercase
+	@media mobile
+		text-transform unset
+		font-size: 19px;
+		font-weight: 600;
+		letter-spacing: 0;
+		line-height: 30px;
+		display block
+	&+&
+		margin-left 48px
+		@media mobile
+			margin-left 0
+

@@ -1,0 +1,109 @@
+@import '~styles/_import'
+
+.wrap
+	font-size 24px
+	line-height 1.5
+	color #fff
+	background-color #000
+	padding 74px 0 50px
+	margin-top 20px
+	@media desc
+		margin-top 10px
+	@media small-tablet
+		padding 30px 0 30px
+	@media (max-width: 968px) and (min-height: 799px)
+		padding 74px 0 50px
+	@media mobile
+		margin-top 10px
+		padding-top 25px
+		padding-bottom 30px
+		font-size 19px
+		line-height 30px
+	&.noGutter
+		margin-top 0
+
+.name
+	line-height 1.4
+	font-weight 600
+
+.text
+	display block
+	font-size 14px
+	line-height 1.72
+	margin-top 7px
+	@media small-tablet
+		margin-bottom 30px
+	@media mobile
+		margin-top 20px
+		margin-bottom 20px
+		font-size 19px
+		line-height 30px
+		font-weight 600
+
+.chips
+	display flex
+	margin-top 58px
+	margin-bottom 80px
+	@media small-tablet
+		margin-top 40px
+		margin-bottom 30px
+	@media mobile
+		order 1
+		margin-bottom 20px
+		margin-top 25px
+
+.chip
+	& + &
+		margin-left 20px
+
+.contacts
+	line-height 32px
+	font-weight 600
+	a
+		text-decoration none
+		display inline-block
+	@media mobile
+		order 0
+
+.copyright
+	margin-top 83px
+	color alpha(#fff, 0.5)
+	font-size 14px
+	font-weight 400
+	line-height 30px
+	display flex
+	align-items baseline
+	@media tablet
+		margin-top 40px
+	@media mobile
+		font-size 12px
+		line-height 20px
+		line-height 20px
+		margin-top 0
+		flex-direction column
+		order 2
+		position relative
+		padding-top 30px
+		&:after
+			content ''
+			position absolute
+			top 0
+			left 20px
+			height 2px
+			width calc(100% - 40px)
+			background #808080
+
+.privacy
+	color #41744E
+	display inline-block
+	line-height 14px
+	&:hover
+		color $green
+		border-color alpha($green, 0.2)
+
+.langToggle
+	margin-left auto
+	@media mobile
+		margin-left 0
+		margin-bottom 30px
+		order -1

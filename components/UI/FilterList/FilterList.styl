@@ -1,0 +1,35 @@
+@import '~styles/_import'
+
+withFilter =
+	background-color rgba(255, 255, 255, 0.7)
+	backdrop-filter blur(10px)
+	border-bottom 1px solid #F0F0F0
+
+.wrap
+	z-index 100
+	background-color $white
+
+.string
+	padding-top 20px
+	display flex
+	gap 12px
+
+	&__title
+		font-size 24px
+		font-weight 700
+
+		&_fixed
+			padding-bottom 78px
+
+
+.fixed
+	width 100vw
+	padding 20px 0
+	padding-left 160px
+
+	position fixed
+	top 0
+	right 0
+	left 0
+
+	{withFilter}

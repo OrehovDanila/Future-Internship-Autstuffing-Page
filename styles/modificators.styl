@@ -1,0 +1,200 @@
+@import './_vars.styl'
+
+// hide-mobile, hide-moremobile etc
+for s in 'small' 'mobile' 'small-tablet' 'tablet' 'desc' 'l' 'page'
+	moresize = 'more-' + s
+	.hide-{s}
+		@media s
+			display none !important
+	.hide-more{s}
+		@media moresize
+			display none !important
+
+.hidden,
+[hidden]
+	display none
+
+.mt0
+	margin-top 0
+
+.mb0
+	margin-bottom 0
+
+.m0
+	margin-top 0
+	margin-bottom 0
+
+.row--bitrix
+	position relative
+
+.pd120
+	padding-top 120px
+	padding-bottom 120px
+
+.pd60-tablet
+	@media tablet
+		padding-top 60px
+		padding-bottom 60px
+
+.pdAll
+	@media (max-width 1700px)
+		padding-left 40px
+		padding-right 40px
+	@media md
+		padding-left 20px
+		padding-right 20px
+	@media (max-width 1280px)
+		padding-left 40px
+		padding-right 40px
+	@media mobile
+		padding-left 0
+		padding-right 0
+
+.pd-all-small-padding
+	@media (max-width: 1700px)
+		padding-left 40px
+		padding-right 40px
+	@media md
+		padding-left 80px
+		padding-right 80px
+	@media (max-width: 1280px)
+		padding-left 40px
+		padding-right 40px
+	@media mobile
+		padding-left 0
+		padding-right 0
+
+.pd-l
+	@media md
+		padding-left 100px
+	@media (max-width: 1280px)
+		padding-left 60px
+	@media mobile
+		padding-left 20px
+
+.pr-r
+	@media md
+		padding-right 100px
+	@media (max-width: 1280px)
+		padding-right 60px
+	@media mobile
+		padding-right 20px
+
+.no-pd-l
+	@media (max-width: 1600px)
+		padding 0
+
+.hide-650
+	@media (max-width: 650px)
+		display none
+
+.maxw1040
+	max-width 1040px
+
+.section--gray
+	background-color #f0f0f0
+
+.gray-text
+	color #686868
+
+.blue-text
+	color $blue
+
+.text-pre
+	white-space pre-wrap
+	@media screen and (max-width 1700px)
+		white-space normal
+
+// common classes
+.text-bold
+	font-weight 700
+
+.text-medium
+	font-weight 600
+
+.text-italic
+	font-style italic
+
+.text-center
+	text-align center
+
+.text-left
+	text-align left
+
+.text-right
+	text-align right
+
+.nowrap
+	white-space nowrap
+
+.hide-descmd
+	@media md
+		display none
+
+.visually-hidden
+	position absolute
+	clip rect(0 0 0 0)
+	width 1px
+	height 1px
+	margin -1px
+
+.home-margin
+	margin-bottom 40px
+
+.link
+	color $gray
+	padding-bottom 2px
+	border-bottom 1px solid alpha(@color, 0.2)
+	white-space nowrap
+	&:hover
+		color $blue
+		border-bottom-color rgba(14, 67, 254, 0.2)
+	&.black
+		color #000
+		border-bottom none
+		padding-bottom 0
+		&:hover
+			color $blue
+	&.blue
+		color $blue
+		border-bottom none
+		padding-bottom 0
+		&:hover
+			color #000
+	&.border
+		color #000
+		border-bottom 1px solid alpha(@color, 0.2)
+		&:hover
+			border-bottom-color rgba(14, 67, 254, 0.2)
+
+.capitalize
+	text-transform capitalize
+
+.text
+	font-size 24px
+	font-weight 600
+	line-height 38px
+	color #686868
+	@media tablet
+		font-size 20px
+		line-height 30px
+	@media mobile
+		font-size 19px
+		font-weight 600
+		line-height 30px
+
+.small-text-gray
+	font-size 13px
+	font-weight 500
+	line-height 24px
+	color #909090
+
+.blue
+	color $blue
+
+.wrapper + .wrapper
+	margin-top 110px
+	@media tablet
+		margin-top 80px
+	@media mobile
+		margin-top 60px

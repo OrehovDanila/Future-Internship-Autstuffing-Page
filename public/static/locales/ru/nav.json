@@ -1,0 +1,297 @@
+{
+	"$": {
+		"full": "Главная"
+	},
+	"services": {
+		"$": {
+			"full": "Lorem Ipsum"
+		},
+		"create": {
+			"$": {
+				"full": "Разработка"
+			},
+			"turnkey": {
+				"$": {
+					"full": "Готовые решения"
+				}
+			},
+			"react": {
+				"$": {
+					"full": "Разработка на React"
+				}
+			},
+			"portals": {
+				"$": {
+					"bread": "Порталы",
+					"grand": "Порталы",
+					"full": "Порталы и сервисы"
+				}
+			},
+			"cabinets": {
+				"$": {
+					"full": "Личные кабинеты"
+				}
+			},
+			"fintech": {
+				"$": {
+					"full": "Финансовые сервисы"
+				}
+			},
+			"ecommerce": {
+				"$": {
+					"full": "Интернет-магазины"
+				}
+			},
+			"apps": {
+				"$": {
+					"full": "Мобильные приложения"
+				}
+			}
+		},
+		"design": {
+			"$": {
+				"full": "Дизайн"
+			},
+			"ux": {
+				"$": {
+					"bread": "UX",
+					"grand": "UX-проектирование",
+					"full": "UX-проектирование"
+				}
+			},
+			"ui": {
+				"$": {
+					"bread": "UI",
+					"grand": "UI-дизайн",
+					"full": "UI-дизайн"
+				}
+			},
+			"control": {
+				"$": {
+					"full": "Дизайн-контроль"
+				}
+			},
+			"identity": {
+				"$": {
+					"full": "Фирменный стиль"
+				}
+			}
+		},
+		"support": {
+			"$": {
+				"bread": "Поддержка",
+				"grand": "Поддержка",
+				"full": "Поддержка и развитие"
+			},
+			"technical": {
+				"$": {
+					"full": "Техническая поддержка"
+				}
+			},
+			"speed": {
+				"$": {
+					"full": "Ускорение сайта"
+				}
+			},
+			"sla": {
+				"$": {
+					"full": "SLA"
+				}
+			},
+			"virus": {
+				"$": {
+					"full": "Удаление вирусов"
+				}
+			},
+			"bitrix24": {
+				"$": {
+					"full": "Внедрение Bitrix24"
+				}
+			},
+			"team": {
+				"$": {
+					"full": "удаленная команда"
+				}
+			},
+			"design": {
+				"$": {
+					"bread": "Дизайн",
+					"full": "Дизайн-поддержка"
+				}
+			}
+		},
+		"research": {
+			"$": {
+				"full": "Исследование"
+			},
+			"cjm": {
+				"$": {
+					"bread": "CJM",
+					"grand": "CJM",
+					"full": "Customer Journey Map (CJM)"
+				}
+			},
+			"business": {
+				"$": {
+					"full": "Исследование бизнеса"
+				}
+			},
+			"audit": {
+				"$": {
+					"full": "Аудит проектов"
+				}
+			}
+		},
+		"marketing": {
+			"$": {
+				"full": "Маркетинг"
+			},
+			"adstrategy": {
+				"$": {
+					"bread": "Стратегии",
+					"grand": "Стратегии",
+					"full": "Рекламные стратегии"
+				}
+			},
+			"email": {
+				"$": {
+					"full": "E-mail рассылки"
+				}
+			},
+			"seo": {
+				"$": {
+					"full": "SEO"
+				}
+			},
+			"copywriting": {
+				"$": {
+					"full": "Копирайтинг"
+				}
+			}
+		},
+		"testing": {
+			"$": {
+				"full": "Тестирование"
+			},
+			"manual": {
+				"$": {
+					"full": "Ручное"
+				}
+			},
+			"auto": {
+				"$": {
+					"full": "Автоматизированное"
+				}
+			}
+		}
+	},
+	"outstuffing": {
+		"$": {
+			"full": "Аутстафф"
+		}
+	},
+	"portfolio": {
+		"$": {
+			"full": "Lorem Ipsum"
+		},
+		"hse-digital-smart-doc": {
+			"$": {
+				"bread": "ВШЭ Smart Doc",
+				"grand": "ВШЭ Smart Doc",
+				"full": "ВШЭ Smart Doc"
+			}
+		},
+		"greenworks": {
+			"$": {
+				"bread": "greenworks",
+				"grand": "greenworks",
+				"full": "Greenworks"
+			}
+		},
+		"alor": {
+			"$": {
+				"bread": "алор брокер",
+				"grand": "алор брокер",
+				"full": "Алор брокер"
+			}
+		},
+		"finex": {
+			"$": {
+				"bread": "finex",
+				"grand": "finex",
+				"full": "Finex"
+			}
+		},
+		"mts": {
+			"$": {
+				"bread": "мтс инвестиции",
+				"grand": "мтс инвестиции",
+				"full": "Мтс инвестиции"
+			}
+		},
+		"berber": {
+			"$": {
+				"bread": "berber",
+				"grand": "berber",
+				"full": "Berber"
+			}
+		},
+		"sam8sara": {
+			"$": {
+				"bread": "sam8sara",
+				"grand": "sam8sara",
+				"full": "Sam8sara"
+			}
+		},
+		"future-support": {
+			"$": {
+				"bread": "future support",
+				"grand": "future support",
+				"full": "Future Support"
+			}
+		}
+	},
+	"company": {
+		"$": {
+			"full": "Lorem Ipsum"
+		},
+		"vacancy": {
+			"$": {
+				"full": "Lorem Ipsum"
+			}
+		},
+		"reviews": {
+			"$": {
+				"full": "Lorem Ipsum"
+			}
+		}
+	},
+	"contact": {
+		"$": {
+			"full": "Lorem Ipsum"
+		}
+	},
+	"clients": {
+		"$": {
+			"full": "Lorem Ipsum"
+		}
+	},
+	"personal": {
+		"$": {
+			"full": "Личный кабинет"
+		},
+		"support": {
+			"$": {
+				"full": "Поддержка"
+			}
+		}
+	},
+	"lc": {
+		"$": {
+			"full": "Личный кабинет"
+		},
+		"monitoring": {
+			"full": "Мониторинг"
+		}
+	}
+}

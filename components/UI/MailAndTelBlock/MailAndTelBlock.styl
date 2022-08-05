@@ -1,0 +1,27 @@
+@import '~styles/_import'
+
+.phone
+	font-size 36px
+	color #fff
+	margin-bottom 10px
+	display inline-block
+	&:hover
+		color #999
+	@media mobile
+		margin-bottom 2px
+		font-size 19px
+		line-height 30px
+		color $green
+
+.mail
+	color $green
+	display inline-block
+	font-size 24px
+	border-bottom 1px solid transparent
+	&:hover
+		border-color alpha(@color, 0.2)
+	@media mobile
+		font-size 19px
+		line-height 30px
+
+

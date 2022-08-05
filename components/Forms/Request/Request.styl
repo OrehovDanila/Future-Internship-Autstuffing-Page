@@ -1,0 +1,52 @@
+@import '~styles/_import'
+
+.select
+	width 100%
+	max-width 1200px
+.line
+	margin-top 64px
+	display flex
+	gap 80px
+
+
+.bottom
+	margin-top 64px
+	display flex
+	align-items flex-start;
+
+	&__textarea
+		max-width 1300px
+	
+	&__suggestion
+		max-width 493px
+		max-height 120px
+		margin-top 120px
+
+.buttons
+	margin-top 40px
+	display flex
+	flex-wrap nowrap
+	button
+		flex 1 0 auto
+	label
+		flex 0 1 auto
+	button + label
+		margin-left 40px
+	@media mobile
+		flex-direction column
+		align-items flex-start
+		margin-top 0
+		button + label
+			margin-left 0
+			margin-top 20px
+
+.disclaimer
+	margin-top 10px
+	margin-bottom 0
+	font-weight 400
+	font-size 10px
+	line-height 14px
+
+.privacy
+	color #000
+	padding-bottom 1px

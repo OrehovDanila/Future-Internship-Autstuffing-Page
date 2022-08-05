@@ -1,0 +1,67 @@
+@import '~styles/_import'
+
+.burger
+	pointer-events all
+	size 24px 17px
+	background-color transparent
+	border-bottom 3px solid #000
+	vertical-align middle
+	position relative
+	z-index 201
+	display inline-block
+	cursor pointer
+	user-select none
+	&:before,
+	&:after
+		content ''
+		position absolute
+		background-color #000
+		display block
+		transition: .2s
+	&:before
+		content ''
+		width 19px
+		height 3px
+		top 7px
+		z-index 1
+	&:after
+		content ''
+		width 22px
+		height 3px
+		z-index 1
+		top 0px
+	&:hover
+		&:before
+		&:after
+			width 24px
+.close
+	z-index 201
+	border-bottom-color #fff
+	&:after,
+	&:before
+		background-color #fff
+		right 0
+	&:after
+		width 22px
+	&:before
+		width 19px
+	&:hover
+		&:before
+		&:after
+			width 24px
+
+@keyframes burgerBefore
+	0%
+		right 0
+		width 100%
+	100%
+		right 0
+		width 19px
+
+@keyframes burgerAfter
+	0%
+		right 0
+		width 100%
+	100%
+		right 0
+		width 22px

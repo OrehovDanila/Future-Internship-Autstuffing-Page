@@ -1,0 +1,120 @@
+@import '~styles/_import'
+
+.flex_end
+    justify-content: flex-end
+.flex_start
+    @media md
+        justify-content: flex-start
+
+.col
+    padding: 0 !important
+    &_end
+        align-self: flex-end
+    &_start
+        @media (max-width: 1440px)
+            align-self flex-start 
+    &_no_padding
+        @media md
+            padding: 0
+    &_flex
+        display: flex
+    &_content_end
+        justify-content: flex-end
+    &_description
+        @media (max-width: 1090px)
+            margin-top: 30px
+        
+
+
+.row
+    &_review
+        margin-bottom: 40px
+    &_chat
+        margin-top: 40px
+        margin-bottom: 80px
+    &_flex_end
+        justify-content: flex-end !important
+    justify-content: space-between
+
+.row_margin
+    margin-left: 40px !important
+    margin-right: 80px !important
+
+.chat
+    &__wrapp
+        background-color: #F0F0F0
+        width: 100%
+        min-height: 640px
+        height fit-content
+        padding: 130px 60px
+        @media md 
+            padding: 130px 0
+    &__description
+        padding-top: 18px
+        border-top: 3px solid #000000
+        color #686868
+        font-size 19px
+        letter-spacing 0
+        line-height 30px
+        p
+            margin-bottom 17px
+        @media more-tablet
+            margin-left: 40px
+    &__message_wrapp
+        display: flex
+        justify-content: center
+        @media md
+            flex-wrap: wrap-reverse
+    &__meessage_future
+        width: 100%
+        padding: 25px 30px
+        max-width: 325px
+        border-radius 20px
+        background-color: #0E43FE
+        height fit-content
+        @media md
+            margin-bottom: 116px
+    &__meessage_client
+        z-index 10
+        width: 100%
+        max-width 427px
+        padding: 25px 30px
+        border-radius 20px
+        background-color #FFFFFF
+        position relative
+        p
+            margin-top: 10px
+        &_wrapp
+            position relative
+    &__meessage_text
+        font-size 17px
+        font-weight 600
+        letter-spacing 0
+        line-height 26px
+        &_black
+            color #000000
+        &_white
+            color: #fff
+        &_italic
+            font-style italic
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    &__meessage_author
+        color #E47621
+        font-size 13px
+        font-weight 600
+        letter-spacing 0
+        line-height 24px
+    &__icon_like
+            top: -106px
+            right: -30px
+            position: absolute
+            content: url('/static/emojis/likes.png');
+            @media (max-width: 1560px)
+                right 0
+            @media (max-width: 880px)
+                left 0
+                transform: scale(-1, 1)
+.description
+    margin-bottom: 60px
+    @media more-md
+        margin-bottom: 110px

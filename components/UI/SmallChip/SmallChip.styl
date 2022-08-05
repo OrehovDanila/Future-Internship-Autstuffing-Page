@@ -1,0 +1,51 @@
+@import '~styles/_import'
+
+.wrap
+	position relative
+	display inline-block
+	height 27px
+	padding 4px 10px
+	font-size 13px
+	line-height 18px
+	border 1px solid $lightGray
+	transition background-color 0.3s, border-color 0.3s, color 0.3s
+	border-radius 5px
+	&:hover:not(.active)
+		@media more-tablet
+			color $gray
+			background $dimmedGray
+			border-color $dimmedGray
+	& + &
+		margin-left 10px
+	&.notifications
+		margin-top 9px
+		margin-right 6px
+	&.notifications + &
+		margin-left 4px
+
+[disabled]
+	opacity 0.5
+	pointer-events none
+
+.transparent
+	opacity 0.25
+
+.active
+	color $white
+	background $blue
+	border-color $blue
+
+.num
+	position absolute
+	top -9px
+	right -6px
+	display flex
+	align-items center
+	justify-content center
+	width 19px
+	height 19px
+	font-size 10px
+	line-height 12px
+	color $white
+	background $blue
+	border-radius 9.5px

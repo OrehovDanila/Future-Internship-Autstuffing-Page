@@ -1,0 +1,135 @@
+@import '~styles/_import'
+
+.page
+	width 100%
+
+.imagePreview
+	width 100%
+
+.landingDescription
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 38px;
+	span:nth-child(1)
+		color #0BBBEF
+	span:nth-child(2)
+		color: #005893
+	span:nth-child(3)
+		color: #C7C8CA
+	span:nth-child(4)
+		color: #87D6F7
+	@media mobile
+		font-size: 19px;
+		line-height: 30px;
+		span:nth-child(1)
+			color inherit
+		span:nth-child(2)
+			color: inherit
+		span:nth-child(3)
+			color: inherit
+		span:nth-child(4)
+			color: inherit
+
+.section
+	margin-top 110px
+	@media tablet
+		margin-top 80px
+	@media mobile
+		margin-top 60px
+	.text
+		margin-bottom 56px
+		color $gray
+		font-size 24px
+		line-height 38px
+		font-weight 600
+		@media tablet
+			margin-bottom 40px
+			font-size 22px
+			line-height 32px
+		@media mobile
+			font-size 19px
+			line-height 30px
+	b
+		color black
+		font-weight 600
+	.titleWithSubtitle
+		display grid
+		grid-template-columns 1fr 1fr
+		grid-gap 60px 80px
+		@media tablet
+			grid-gap 40px 20px
+
+.project
+	margin-top 80px
+	@media mobile
+		margin-top 40px
+	&:first-child
+		margin-top 0
+	.projectImageWrapper
+		display flex
+		justify-content center
+		align-items center
+		background-color #f0f0f0
+		width 100%
+		padding 110px 0
+		@media tablet
+			width calc(100% + 100px)
+			margin-left -50px
+		@media mobile
+			width calc(100% + 40px)
+			margin-left -20px
+			padding 60px 0
+		img
+			height 340px
+			@media mobile
+				height 150px
+	video
+		width 100%
+		@media tablet
+			width calc(100% + 100px)
+			margin-left -50px
+		@media mobile
+			width calc(100% + 40px)
+			margin-left -20px
+	.projectTitle
+		margin 34px 0 0
+		font-size 32px
+		line-height 44px
+		font-weight bold
+		color #000000
+		text-transform unset
+		@media tablet
+			font-size 28px
+			line-height 40px
+		@media mobile
+			margin-top 33px
+			font-size 24px
+			line-height 36px
+	.projectDescription
+		margin 20px 0 0
+		font-size 24px
+		line-height 38px
+		font-weight 600
+		color $gray
+		@media tablet
+			font-size 22px
+			line-height 36px
+		@media tablet
+			margin-top 10px
+			font-size 19px
+			line-height 30px
+
+.feedback
+	padding 0 !important
+
+.previewVideo
+	max-width 1600px
+	height auto
+
+.video
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	max-width: 1600px;

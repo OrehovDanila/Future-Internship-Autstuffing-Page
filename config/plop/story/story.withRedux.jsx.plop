@@ -1,0 +1,31 @@
+import React from 'react';
+import { Mock{{pascalCase storeName}}Store } from '{{storeMockPath}}';
+
+import {{pascalCase componentName}} from './{{pascalCase componentName}}';
+
+const defaultState = {
+	{{camelCase storeName}}: {
+		field1: false,
+		field2: null,
+	},
+};
+
+export default {
+	title: '{{storyPath}}{{pascalCase componentName}}',
+	component: {{pascalCase componentName}},
+	decorators: [
+		Story => (
+			<Mock{{pascalCase storeName}}Store state={defaultState}>
+				<Story />
+			</Mock{{pascalCase storeName}}Store>
+		),
+	],
+};
+
+const Template = args => <{{pascalCase componentName}} {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+	className: undefined,
+	children: <div>Child component</div>,
+};

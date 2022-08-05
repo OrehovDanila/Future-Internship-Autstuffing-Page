@@ -1,0 +1,98 @@
+@import '~styles/_import'
+
+.container
+	display flex
+	align-items flex-start
+
+	&__leftColumn
+		width 493px
+		height 464px
+		background-color $white
+		display flex
+		justify-content center
+		position relative
+
+	&__rightColumn
+		padding-left 80px
+		display flex
+		flex-direction column
+
+
+.imgBlock
+	padding 40px
+	display flex
+	flex-direction column
+	align-items center
+
+	&__greyText
+		margin-top 16px
+		font-weight 400
+		font-size 19px
+		opacity 0.5
+
+	&__Ellipse
+		padding 0 5px
+
+	&__img
+		height 120px
+		width 120px
+		border-radius 100px
+
+	&__topText
+		font-weight 700
+		font-size 24px
+
+
+	&__bottomText
+		margin-bottom 30px
+		font-weight 700
+		font-size 30px
+
+	&__icons
+		position absolute
+		top 0
+		left 0
+
+
+.title
+	font-weight 700
+	font-size 48px
+	line-height 62px
+
+.list
+	margin 30px 0
+	padding 0px
+
+	display flex
+	flex-direction row
+	align-items flex-start
+	gap 5px
+
+	&__item
+		border 1px solid $lightGray
+		border-radius 5px
+		padding 4px 10px 5px
+
+		font-weight 600
+		font-size 13px
+		line-height 18px
+		color $gray
+
+		background-color $white
+
+
+.textWithTitle
+	margin-top 60px
+
+	&__title
+		font-weight 700
+		font-size 24px
+		line-height 38px
+		
+	&__text
+		margin-top 16px
+
+		font-weight 400
+		font-size 19px
+		line-height 30px
+		color $gray

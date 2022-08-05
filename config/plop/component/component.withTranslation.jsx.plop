@@ -1,0 +1,20 @@
+import React from 'react';
+import { useTranslation } from '../../i18n';
+import { Row, Col } from '../UI/Grid';
+import s from './{{pascalCase componentName}}.styl';
+
+const {{pascalCase componentName}} = () => {
+	const { t } = useTranslation(['common']);
+
+	return (
+		<div>
+			<span className={s.foo}>{{pascalCase componentName}}</span>
+		</div>
+	);
+};
+
+{{pascalCase componentName}}.getInitialProps = async () => ({
+	namespacesRequired: ['common'],
+});
+
+export default {{pascalCase componentName}};

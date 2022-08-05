@@ -1,0 +1,183 @@
+@import '~styles/_import'
+
+.label
+	font-size 24px
+	font-weight 600
+	line-height 32px
+	color #000
+	display block
+	width 100%
+	max-width 480px
+	position relative
+	@media mobile
+		font-size 19px
+		line-height 30px
+		margin-bottom 30px
+
+.areaLabel
+	max-width 100%
+
+.input
+	display block
+	width 100%
+	margin-top 18px
+	font-size 19px
+	padding-left 20px
+	padding-right 20px
+	height 58px
+	background-color #fbfbfb
+	border 1px solid #e1e1e1
+	transition background-color 0.15s, box-shadow 0.15s
+	&:hover,
+	&:focus,
+	&:not(:placeholder-shown)
+		background-color #fff
+	@media mobile
+		margin-top 12px
+
+.half
+	width 50%
+
+.area
+	padding-top 20px
+	padding-bottom 20px
+	width 100%
+	resize none
+	max-height 320px
+	height 100%
+	position relative
+	@media mobile
+		padding-top 14px
+		padding-bottom 14px
+		height 200px
+
+.fileList
+	position absolute
+	bottom 20px
+	left 20px
+
+.error
+	input
+		border-color #e50000
+
+.errorText
+	display block
+	position absolute
+	color #e50000
+	bottom -26px
+	left 0
+	line-height 1.71
+	font-size 14px
+	font-weight 300
+
+.file
+	display none
+	&Label
+		height 58px
+		color #000
+		font-size 19px
+		font-weight 700
+		line-height 1
+		text-align center
+		background-color $green
+		border 1px solid $green
+		padding 12px 30px 13px
+		cursor pointer
+		display inline-flex
+		align-items center
+		transition background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s
+		background-color $dimmedGray
+		border-color $dimmedGray
+		&:hover
+			background-color #000000
+			border-color #000000
+			color #fff
+			@media tablet
+				background-color #d6d6d6
+				border-color @background-color
+
+.areaWrap
+	position relative
+
+.dropHighlight
+	border 3px dashed #CCCCCC
+	background-color #FBFBFB
+	placeholder({ visibility: hidden })
+	& + .dropHint
+		display flex
+
+.dropHint
+	font-size 19px
+	line-height 32px
+	text-align center
+	color #000000
+	justify-content center
+	align-items center
+	flex-direction column
+	flex-wrap nowrap
+	display none
+	position absolute
+	top 50%
+	left 50%
+	transform translateX(-50%) translateY(-50%)
+
+.uploadArrow
+	margin-bottom 20px
+
+.selectHeader
+	position relative
+	display flex
+	align-items center
+	padding-left 20px
+	font-size 19px
+	height 58px
+	margin-top 18px
+	border 1px solid #cccccc
+	background-color white
+	cursor pointer
+	user-select none
+	.drop
+		position absolute
+		top 24px
+		right 20px
+		transition all 0.3s ease
+	&--opened
+		.drop
+			transform rotate(180deg)
+
+.selectOptions
+	position absolute
+	width 100%
+	z-index 9999
+	display none
+	max-height 250px
+	border 1px solid #cccccc
+	border-top-color white
+	overflow scroll
+	&--opened
+		display block
+	&+select
+		display none
+		position absolute
+		top 0
+		left 0
+		z-index -1
+
+.selectOption
+	display flex
+	align-items center
+	padding-left 20px
+	height 58px
+	font-size 19px
+	background-color white
+	&:hover
+		color $blue
+		cursor pointer
+
+.grayText
+	font-weight 400
+	font-size 19px
+	opacity 0.5
+.Ellipse
+	padding 0 10px
+	opacity 0.5

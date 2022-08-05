@@ -1,0 +1,148 @@
+@import '~styles/_import'
+
+.wrap
+	label
+		max-width 100%
+
+.title
+	margin-bottom 48px
+	overflow-wrap: break-word
+	@media tablet
+		margin-bottom 24px
+
+.pseudoRow
+	margin-bottom 64px
+	label
+		width 100%
+	@media tablet
+		margin-bottom 0
+
+.row
+	& + &
+		margin-top 64px
+		@media tablet
+			margin-top 40px
+		@media mobile
+			margin-top 0
+	label + label
+		margin-left 80px
+	@media mobile
+		flex-wrap wrap
+		label + label
+			margin-left 0px
+
+// .col
+// @media mobile
+// margin-top 24px
+.buttons
+	margin-top 40px
+	display flex
+	flex-wrap nowrap
+	button
+		flex 1 0 auto
+	label
+		flex 0 1 auto
+	button + label
+		margin-left 40px
+	@media mobile
+		flex-direction column
+		align-items flex-start
+		margin-top 0
+		button + label
+			margin-left 0
+			margin-top 20px
+
+.error
+	margin-top 40px
+
+	color #e50000
+	font-size 14px
+	font-weight 300
+
+.disclaimer
+	margin-top 10px
+	margin-bottom 0
+	font-size 10px
+	font-weight 400
+	line-height 14px
+
+.privacy
+	color #000
+	padding-bottom 1px
+
+.addMessage
+	display inline-block
+	color $blue
+	font-size 13px
+	font-weight 600
+	line-height 18px
+	margin 40px 0 0
+	border-bottom 1px dotted @color
+	cursor pointer
+	&:hover
+		border-bottom-color transparent
+
+.loader
+	display flex
+	align-items center
+	padding-left 20%
+	height 475px
+
+.ok
+	height 36px
+	margin-top 15px
+
+.suggest
+	padding-top 50px
+	@media tablet
+		display none
+
+.injectedSub
+	margin-top -20px
+
+.inModal
+	.col
+		&:nth-of-type(n + 3)
+			@media (max-width 1440px)
+				margin-top 40px
+			@media mobile
+				margin-top 0px
+	.addMessage
+		@media mobile
+			margin-top 20px 0 0
+
+.btn_send
+	@media mobile
+		padding: 12px 90px 
+
+.fileButton
+	@media mobile
+		&.invisible
+			display none
+
+.onPage
+	.col:last-of-type
+		label
+			@media mobile
+				margin-bottom 20px
+	.addMessage
+		@media mobile
+			margin 0 0 20px
+
+.break
+	flex-basis 100%
+	height 0
+
+	@media tablet 
+		margin-top 40px
+
+	@media mobile 
+		margin-top 0px
+
+// .wrapSuccess
+	// margin-top -140px !important
+	// @media tablet
+	// 	margin-top 0 !important
+	// 	margin-left -50px !important
+	// @media mobile
+	// 	margin-left -20px !important

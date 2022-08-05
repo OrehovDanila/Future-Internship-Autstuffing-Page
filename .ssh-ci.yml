@@ -1,0 +1,83 @@
+image: v12.13.0
+
+variables:
+    BUILD_ZIP_NAME: build_${CI_COMMIT_TAG}.zip
+    HOST: 151.248.122.140
+    REMOTE_USER: root@${HOST}
+    REMOTE_PATH: /root/fugr
+    VERSIONS_DIR: ${REMOTE_PATH}/versions
+    APP_DIR: ${REMOTE_PATH}/app
+    SERVICE_NAME: fugr
+
+stages:
+    - build
+    - deploy
+
+build and zip:
+    stage: build
+    cache:
+        key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+        paths:
+            - node_modules/
+    artifacts:
+        paths:
+            - ${BUILD_ZIP_NAME}
+    tags:
+        - production
+    variables:
+        GIT_STRATEGY: clone
+    script:
+        - yarn
+        - yarn build
+        - >
+            zip -rq ${BUILD_ZIP_NAME}
+            pm2.config.js
+            package.json
+            node_modules
+            nginx
+            public
+            build
+            paths.js
+            next.config.js
+            i18n.js
+            server.js
+            index.js
+    only:
+        - /^v-.*$/
+    except:
+        - branches
+
+deploy:
+    stage: deploy
+    tags:
+        - production
+    variables:
+        GIT_STRATEGY: none
+    environment:
+        name: fugr
+        url: http://80.78.254.230
+    before_script:
+        - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+        - eval $(ssh-agent -s)
+        - ssh-add <(echo "$SSH_PRIVATE_KEY")
+        - mkdir -p ~/.ssh
+        - chmod 700 ~/.ssh
+        - ssh-keyscan $HOST >> ~/.ssh/known_hosts
+        - chmod 700 ~/.ssh/known_hosts
+        - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    script:
+        - scp -r ${BUILD_ZIP_NAME} ${REMOTE_USER}:${VERSIONS_DIR}
+        - >
+            ssh ${REMOTE_USER} "
+            pm2 delete all;
+            rm -rf ${APP_DIR}/*;
+            unzip -q ${VERSIONS_DIR}/${BUILD_ZIP_NAME} -d ${APP_DIR};
+            cd ${APP_DIR};
+            pm2 start pm2.config.js;"
+
+
+    # when: manual
+    only:
+        - /^v-.*$/
+    except:
+        - branches

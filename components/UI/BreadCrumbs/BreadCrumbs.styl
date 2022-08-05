@@ -1,0 +1,28 @@
+@import '~styles/_import'
+
+.list
+	list-style none
+	display flex
+	flex-wrap wrap
+	margin 0
+	padding 0
+	margin-bottom 0
+
+.link
+	text-transform capitalize
+	&:hover
+		cursor pointer
+		color #0e43fe
+
+
+.item
+	color #909090
+	font-size 13px
+	line-height 24px
+	text-decoration none
+	font-weight 500
+	&:after
+		content: '/'
+		margin-left 4px
+	& + &
+		margin-left 4px

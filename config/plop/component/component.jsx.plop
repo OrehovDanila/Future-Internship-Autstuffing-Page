@@ -1,0 +1,13 @@
+import React from 'react';
+import { Row, Col } from '../UI/Grid';
+import s from './{{pascalCase componentName}}.styl';
+
+const {{pascalCase componentName}} = () => {
+	return (
+		<div>
+			<span className={s.foo}>{{pascalCase componentName}}</span>
+		</div>
+	);
+};
+
+export default {{pascalCase componentName}};

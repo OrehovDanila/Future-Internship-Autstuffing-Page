@@ -1,0 +1,216 @@
+{
+	"head": {
+		"title": "Интернет-агентство Future. Оптимальные решения бизнес-задач в интернете.",
+		"description": "Интернет-агентство Future. Оптимальные решения бизнес-задач в интернете.",
+		"keywords": "разработка дизайн маркетинг исследование поддержка"
+	},
+	"actions": {
+		"discuss": "Обсудить проект",
+		"presentation": "Презентация",
+		"lk": "Личный кабинет",
+		"mail-us": "Написать нам",
+		"route": "Маршрут",
+		"taxi": "Вызвать Яндекс.Такси",
+		"select": "Выбрать"
+	},
+	"text": {
+		"tariff": "Тариф"
+	},
+	"info": {
+		"name": "Lorem ipsum dolor sit amet",
+		"slogan": "Создаем и\u00A0развиваем сайты, сервисы и\u00A0приложения",
+		"address": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+		"address-direction": "Пешком 15 минут от м.\u00A0Нахимовский\u00A0проспект (выход №5) в\u00A0сторону\u00A0«Нахимовского\u00A0проспекта и\u00A0Симферопольского бульвара»",
+		"parking": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"privacy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+	},
+	"generic": {
+		"days_2": "дней",
+		"days_0": "день",
+		"days_1": "дня",
+		"days_genitive_2": "дней",
+		"days_genitive_0": "дня",
+		"days_genitive_1": "дней",
+		"months_2": "месяцев",
+		"months_0": "месяц",
+		"months_1": "месяца",
+		"months_genitive_2": "месяцев",
+		"months_genitive_0": "месяца",
+		"months_genitive_1": "месяцев",
+		"years_2": "лет",
+		"years_0": "год",
+		"years_1": "года",
+		"years_genitive_2": "лет",
+		"years_genitive_0": "года",
+		"years_genitive_1": "лет",
+		"price": "{{ price, price }}",
+		"price-per-hour": "{{ price, price }} / час",
+		"price-per-day": "{{ price, price }} / день",
+		"price-per-month": "{{ price, price }} / месяц",
+		"price-per-year": "{{ price, price }} / год"
+	},
+	"modal": {
+		"signin": "войдите\nв\u00A0личный кабинет",
+		"signup": "регистрация\nв\u00A0личном кабинете",
+		"recover": "восстановление\nпароля",
+		"feedback": "обсудить\nпроект",
+		"techsupport-services": "все\nработы",
+		"design-support-services": "все\nработы",
+		"actions": "Все\nнаправления",
+		"bitrix-features": "Все\nвозможности",
+		"ui-design-services": "Все\nработы",
+		"respond": "Откликнуться",
+		"create-review": "Оставить отзыв",
+		"stuff-card": "lorem\nipsum",
+		"request": "Оставить\nзаявку"
+	},
+	"privacy": {
+		"accept": "Я даю свое согласие <0/><1>на обработку персональных данных</1>"
+	},
+	"form": {
+		"feedback": {
+			"pretitle": "заявка",
+			"aside": "<0>Быстрее к\u00A0делу.</0> Я\u00A0<1>зарегистрируюсь</1> и\u00A0создам обращение в\u00A0поддержку",
+			"done": {
+				"title": "окей, заявка<br />в обработке…",
+				"sub": "Наш менеджер свяжется с\u00A0вами в\u00A0течение рабочего дня."
+			}
+		},
+		"create-review": {
+			"done": {
+				"title": "отзыв\nотправлен...",
+				"sub": "Спасибо вам за оставленный отзыв."
+			}
+		},
+		"respond": {
+			"aside": "<0>Не нашли подходящую вакансию,</0> пиши нам на <1>info@future-group.ru</1>",
+			"done": {
+				"title": "ок, резюме\nотправлено…",
+				"sub": "Наш менеджер свяжется с вами в течение рабочего дня."
+			},
+			"actualVacancies": {
+				"title": "Актуальная вакансия",
+				"list": ["Менеджер по продажам", "PHP программист", "UI/UX дизайнер", "Менеджер дизайн-проектов", "DevOps Engineer"]
+			}
+		},
+		"recover": {
+			"steps": [
+				"Вся информация о\u00A0смене пароля будет выслана на\u00A0email.",
+				"Мы\u00A0отправили информацию о\u00A0смене пароля на\u00A0",
+				"Придумайте новый пароль"
+			]
+		},
+		"actions": {
+			"recover": "Восстановить пароль",
+			"ok": "Понятно",
+			"add-message": "Добавить сообщение",
+			"attach": "Прикрепить",
+			"attach_summary": "Прикрепить резюме",
+			"attach_plural": "Прикрепить еще",
+			"send": "Отправить",
+			"change": "Изменить",
+			"signin": "Войти",
+			"signup": "Зарегистрироваться",
+			"calculate": "Рассчитать",
+			"reset": "Сброс",
+			"discuss": "Обсудить проект"
+		},
+		"fields": {
+			"name": {
+				"label": "Имя",
+				"placeholder": "Евгений",
+				"errors": {
+					"empty": "Заполните поле",
+					"invalid": "Неправильно"
+				}
+			},
+			"fname": {
+				"label": "Имя",
+				"errors": {
+					"empty": "Заполните поле",
+					"invalid": "Неправильно"
+				}
+			},
+			"lname": {
+				"label": "Фамилия",
+				"errors": {
+					"invalid": "Неправильно"
+				}
+			},
+			"login": {
+				"label": "Логин",
+				"placeholder": "client@example.com",
+				"errors": {
+					"empty": "Заполните поле",
+					"invalid": "Неверный формат email"
+				}
+			},
+			"company": {
+				"label": "Компания",
+				"errors": {
+					"invalid": "Неправильно"
+				}
+			},
+			"position": {
+				"label": "Должность",
+				"errors": {
+					"invalid": "Неправильно"
+				}
+			},
+			"review": {
+				"label": "отзыв",
+				"placeholder": "Расскажите о проекте...",
+				"errors": {
+					"invalid": "Неправильно"
+				}
+			},
+			"email": {
+				"label": "Email",
+				"placeholder": "client@example.com",
+				"errors": {
+					"empty": "Заполните поле",
+					"invalid": "Неверный формат email"
+				}
+			},
+			"phone": {
+				"label": "Телефон",
+				"errors": {
+					"empty": "Введите номер телефона",
+					"invalid": "Введите корректный телефон"
+				}
+			},
+			"message": {
+				"label": "Сообщение",
+				"placeholder": "Опишите проект или\u00A0задачу"
+			},
+			"aboutMe": {
+				"label": "О себе",
+				"placeholder": "Расскажите о себе…"
+			},
+			"password": {
+				"label": "Пароль",
+				"errors": {
+					"empty": "Заполните поле"
+				}
+			},
+			"password_confirm": {
+				"label": "Подтвердите пароль",
+				"errors": {
+					"empty": "Заполните поле",
+					"nomatch": "Введенные пароли не совпадают"
+				}
+			},
+			"files": {
+				"errors": {
+					"invalid-type": "Недопустимый формат файла.",
+					"exceed": "Превышен допустимый размер. Загрузите файл до 10 мб.",
+					"exceed_plural": "Превышен допустимый размер. Загрузите файлы до 10 мб."
+				}
+			},
+			"inputError": {
+				"WrongLoginOrPassword": "Неверный логин или пароль.",
+				"notFoundEmail": "Введенные логин (email) не найдены."
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+import React from 'react';
+import { defaultMetaState, tabletMetaState, MockMetaStore } from '{{storeMockPath}}';
+
+import {{pascalCase componentName}} from './{{pascalCase componentName}}';
+
+export default {
+	title: '{{storyPath}}{{pascalCase componentName}}',
+	component: {{pascalCase componentName}},
+	decorators: [
+		Story => (
+			<MockMetaStore state={defaultMetaState}>
+				<Story />
+			</MockMetaStore>
+		),
+	],
+};
+
+const Template = args => <{{pascalCase componentName}} {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+	className: undefined,
+	children: <div>Child component</div>,
+};
+
+export const Tablet = Template.bind({});
+Tablet.decorators = [story => <MockMetaStore state={tabletMetaState}>{story()}</MockMetaStore>];
+Tablet.parameters = {
+	viewport: {
+		defaultViewport: 'mobile2',
+	},
+};
+Tablet.args = {
+	className: undefined,
+	children: <div>Child component</div>,
+};

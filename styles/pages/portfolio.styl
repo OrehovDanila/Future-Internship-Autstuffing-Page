@@ -1,0 +1,25 @@
+@import '~styles/_import'
+
+.title
+	margin-bottom 50px
+
+.intro
+	max-width 1200px
+
+.projects
+	padding 0px 10px
+	margin 40px auto 0px
+	max-width 1920px
+
+	display flex
+	flex-flow row wrap
+
+	@media mobile
+		flex-flow column nowrap
+
+	& &__case
+		padding 0px 10px
+		margin 0px 0px 80px 0px
+
+		@media mobile
+			margin 0px 0px 40px 0px

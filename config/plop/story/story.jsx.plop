@@ -1,0 +1,15 @@
+import React from 'react';
+import {{pascalCase componentName}} from './{{pascalCase componentName}}';
+
+export default {
+	title: '{{storyPath}}{{pascalCase componentName}}',
+	component: {{pascalCase componentName}},
+};
+
+const Template = args => <{{pascalCase componentName}} {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+	className: undefined,
+	children: <div>Child component</div>,
+};

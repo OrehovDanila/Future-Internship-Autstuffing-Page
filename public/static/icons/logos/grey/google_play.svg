@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="23px" viewBox="0 0 22 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon - Google Play</title>
+    <defs>
+        <path d="M15.5763296,7.77241335 L1.74100595,0.215290816 C1.34871224,0.00207844302 0.986894247,-0.0475208099 0.693808702,0.0433037961 L12.0262336,11.2997576 L15.5763296,7.77241335" id="path-1"></path>
+        <path d="M0.693160283,0.0433037961 C0.272336126,0.174065463 0,0.597269478 0,1.23755074 L0.00259367739,21.3890186 C0.00259367739,22.0222143 0.266500352,22.4389769 0.675004541,22.5781124 L12.0262336,11.3016901 L0.693160283,0.0433037961" id="path-3"></path>
+        <path d="M0.675004541,22.5781124 C0.970035344,22.6773109 1.33898595,22.6309324 1.74100595,22.4119227 L15.5925401,14.8444938 L12.0262336,11.3016901 L0.675004541,22.5781124" id="path-5"></path>
+    </defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.1-M_Projects_case_hse_smart_doc" transform="translate(-118.000000, -511.000000)">
+            <g id="Buttons" transform="translate(20.000000, 494.000000)">
+                <g id="Button_google_play" transform="translate(78.000000, 0.000000)">
+                    <g id="Icon---Google-Play" transform="translate(20.303332, 17.017644)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Fill-1" fill="#8A8A8A" xlink:href="#path-1"></use>
+                        <path d="M15.5944853,14.8444938 L20.3175718,12.2646885 C21.2752872,11.7397094 21.2752872,10.8855717 20.3175718,10.3618808 L15.576978,7.77241335 L12.0262336,11.2997576 L15.5944853,14.8444938" id="Fill-2" fill="#9F9F9F"></path>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Fill-3" fill="#6A6A6A" xlink:href="#path-3"></use>
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="Fill-4" fill="#8A8A8A" xlink:href="#path-5"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

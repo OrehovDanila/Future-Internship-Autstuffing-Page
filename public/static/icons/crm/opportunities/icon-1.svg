@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A8B20579-3F02-46C3-B8E7-C96AE5F843B6</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F9F9F9" offset="0%"></stop>
+            <stop stop-color="#E9E9E9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CRM_Future" transform="translate(-720.000000, -1816.000000)">
+            <g id="Group-10" transform="translate(160.000000, 1486.000000)">
+                <g id="Group-2" transform="translate(560.000000, 330.000000)">
+                    <circle id="Oval" fill="url(#linearGradient-1)" cx="32" cy="32" r="32"></circle>
+                    <g id="browser" transform="translate(17.000000, 20.000000)" fill="#000000" fill-rule="nonzero">
+                        <path d="M29.6521739,0 L1.34782609,0 C0.606521739,0 0,0.583783784 0,1.2972973 L0,22.7027027 C0,23.4162162 0.606521739,24 1.34782609,24 L29.6521739,24 C30.3934783,24 31,23.4162162 31,22.7027027 L31,1.2972973 C31,0.583783784 30.3934783,0 29.6521739,0 Z M28.3043478,5.51351351 L18.8695652,5.51351351 L18.8695652,2.59459459 L28.3043478,2.59459459 L28.3043478,5.51351351 Z M8.08695652,5.51351351 L8.08695652,2.59459459 L11.4565217,2.59459459 L11.4565217,5.51351351 L8.08695652,5.51351351 Z M13.4782609,2.59459459 L16.8478261,2.59459459 L16.8478261,5.51351351 L13.4782609,5.51351351 L13.4782609,2.59459459 Z M6.06521739,2.59459459 L6.06521739,5.51351351 L2.69565217,5.51351351 L2.69565217,2.59459459 L6.06521739,2.59459459 Z M2.69565217,21.4054054 L2.69565217,7.78378378 L28.3043478,7.78378378 L28.3043478,21.4054054 L2.69565217,21.4054054 Z" id="XMLID_1315_"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,181 @@
+@import './_vars.styl'
+@import './_media.styl'
+
+html
+	overflow-y scroll
+	overflow-x hidden
+
+body
+	color $fontColor
+	font-family $fontFamily, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif // fallback system fonts
+	font-size 18px
+	font-weight 400
+	line-height 1.4
+	-webkit-font-smoothing antialiased // mac fix
+	-webkit-text-stroke 1px transparent // mac fix
+	-webkit-text-size-adjust 100% // stop iphone resize when orientation landscape
+	width 100vw
+	// overflow-x hidden
+	// @media mobile
+	// font-size 16px
+
+input[type='checkbox']
+	appearance checkbox
+
+h4,
+.h4
+	margin-top 20px
+	margin-bottom 20px
+	font-size 20px
+
+h5,
+.h5
+	font-size 22px
+	line-height 30px
+
+h6,
+.h6
+	margin-top 20px
+	margin-bottom 20px
+
+p
+	margin-top 0px
+	margin-bottom 0px
+
+p + p
+	margin-top 40px
+	@media mobile
+		margin-top 30px
+
+.title
+	margin-bottom 30px
+	text-align center
+	font-weight 300
+	font-size 42px
+	@media mobile
+		font-size 32px
+	& + .h2
+		margin-top -30px
+
+.footnote
+	margin-top 30px
+	margin-bottom 30px
+	padding-top 30px
+	border-top 1px solid $main
+	font-size 12px
+	&_simple
+		margin-top 40px
+		margin-bottom 0
+		padding-top 0
+		border-top none
+		font-size 13px
+	@media mobile
+		padding-top 0
+		border-top none
+	li + li
+		margin-top 20px
+
+.footnoteSymbol
+	font-weight 600
+	font-size 10px
+	.headerMain__caption &
+		top -36px
+		@media mobile
+			top -22px
+	.title &
+		top -25px
+		@media mobile
+			top -18px
+
+.textMain
+	font-size 13px
+	line-height 1.38
+
+.textSmall
+	font-size 10px
+	line-height 1.4
+
+// ol,
+// ul
+// margin-top 15px
+// margin-bottom 25px
+ul
+	list-style none
+
+ol
+	padding-left 30px
+	li
+		padding-left 10px
+
+b,
+strong
+	font-weight 700
+
+i,
+em
+	font-style italic
+
+sup
+	position relative
+	top -0.45em
+	vertical-align baseline
+	font-size 85%
+	line-height 0
+
+sub
+	position relative
+	top 0.2em
+	vertical-align baseline
+	font-size 85%
+	line-height 0
+
+u
+	text-decoration underline
+
+blockquote
+	position relative
+	&:before,
+	&:after
+		display inline-block
+		color #bdbdbd
+		vertical-align -0.45em
+		font-size 3em
+		font-family 'Times New Roman'
+		line-height 0.1em
+	&:before
+		margin-right 5px
+		content '\201C'
+	&:after
+		margin-left 5px
+		content '\201D'
+
+code
+	font-family monospace
+
+a
+	outline none
+	text-decoration none
+	cursor pointer
+	border-bottom 1px solid transparent
+	transition border-color, color 0.2s
+	&:focus,
+	&:active
+		outline none
+
+mark
+	background-color #ff0
+
+.textUpper
+	text-transform uppercase
+
+.textBold
+	font-weight 700
+
+.textSemiBold
+	font-weight 600
+
+.textLight
+	font-weight 300
+
+.textSmall
+	font-size 14px

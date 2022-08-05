@@ -1,0 +1,96 @@
+@import '~styles/_import'
+
+red = #C7211F
+green = #178239
+
+.title
+	margin-top 30px
+	margin-bottom 0
+	@media tablet
+		margin-bottom 0 !important
+
+.tableCol
+	margin-top 40px
+	@media tablet
+		order 2
+		margin-top 10px
+
+.table
+	margin-bottom 40px
+	@media mobile
+		margin-bottom 30px
+	thead
+		th:first-of-type
+			width 210px
+
+.okStatus, .failureStatus
+	display inline-block
+	position relative
+	padding-left 20px
+	&:before
+		content ''
+		display block
+		width 16px
+		height 16px
+		border-radius 50%
+		position absolute
+		left 0
+		top 0
+		transform translate(-50%, 25%)
+
+.okStatus
+	color green
+	&:before
+		background-color green
+
+.failureStatus
+	color red
+	&:before
+		background-color red
+
+.date, .period
+	font-size 10px
+	margin-top 5px
+
+.date
+	padding-left 20px
+	color $gray
+
+.row
+	padding-bottom 110px
+	@media mobile
+		padding 0 0 60px
+
+.report
+	@media tablet
+		margin-bottom 30px
+
+.selectorsCol
+	display flex
+	align-items center
+	@media tablet
+		order 1
+	@media mobile
+		flex-flow column
+
+
+.select, .selectHeader
+	width 240px !important
+	@media mobile
+		width 100% !important
+
+.select
+	margin-right 40px
+	height 58px
+	@media mobile
+		margin 0 0 20px !important
+
+.selectHeader
+	margin-top 0 !important
+
+
+
+
+
+
+
